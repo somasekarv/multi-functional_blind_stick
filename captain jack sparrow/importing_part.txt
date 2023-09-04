@@ -1,0 +1,27 @@
+pip install pyttsx3
+pip install SpeechRecognition
+pip install playsound
+pip install os-sys
+pip install pywhatkit
+pip install pyjokes
+pip install operator-courier
+pip install pyoperators
+pip install urllib
+pip install selenium
+pip install socket
+pip install twilio
+pip install requests
+pip install socket
+pip install shutil
+pip install operator
+pip install subprocess
+pip install pyautogui
+pip install matplotlib
+pip install seaborn
+pip install torchvision
+pip install psutil
+pip install pandas
+pip install cv2
+pip install torch
+
+

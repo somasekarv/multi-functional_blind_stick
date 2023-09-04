@@ -1,0 +1,81 @@
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_background(object):
+    def setupUi(self, background):
+        background.setObjectName("background")
+        background.resize(1130, 856)
+        self.background_2 = QtWidgets.QLabel(background)
+        self.background_2.setGeometry(QtCore.QRect(-10, -10, 1141, 871))
+        self.background_2.setStyleSheet("background-color:black;")
+        self.background_2.setObjectName("background_2")
+        self.listeningcommands = QtWidgets.QLabel(background)
+        self.listeningcommands.setGeometry(QtCore.QRect(670, 230, 351, 451))
+        self.listeningcommands.setText("")
+        self.listeningcommands.setPixmap(QtGui.QPixmap("################image path###############"))
+        self.listeningcommands.setScaledContents(True)
+        self.listeningcommands.setObjectName("listeningcommands")
+        self.codeingrun = QtWidgets.QLabel(background)
+        self.codeingrun.setGeometry(QtCore.QRect(10, 610, 331, 211))
+        self.codeingrun.setText("")
+        self.codeingrun.setPixmap(QtGui.QPixmap("################image path###############"))
+        self.codeingrun.setScaledContents(True)
+        self.codeingrun.setObjectName("codeingrun")
+        self.sleeptime = QtWidgets.QLabel(background)
+        self.sleeptime.setGeometry(QtCore.QRect(10, 10, 331, 301))
+        self.sleeptime.setText("")
+        self.sleeptime.setPixmap(QtGui.QPixmap("################image path###############"))
+        self.sleeptime.setScaledContents(True)
+        self.sleeptime.setObjectName("sleeptime")
+        self.startlestening = QtWidgets.QLabel(background)
+        self.startlestening.setGeometry(QtCore.QRect(330, 660, 511, 211))
+        self.startlestening.setText("")
+        self.startlestening.setPixmap(QtGui.QPixmap("################image path###############"))
+        self.startlestening.setScaledContents(True)
+        self.startlestening.setObjectName("startlestening")
+        self.lodingtotakecommand = QtWidgets.QLabel(background)
+        self.lodingtotakecommand.setGeometry(QtCore.QRect(100, 350, 541, 231))
+        self.lodingtotakecommand.setText("")
+        self.lodingtotakecommand.setPixmap(QtGui.QPixmap("################image path###############"))
+        self.lodingtotakecommand.setScaledContents(True)
+        self.lodingtotakecommand.setObjectName("lodingtotakecommand")
+        self.initiation1 = QtWidgets.QLabel(background)
+        self.initiation1.setGeometry(QtCore.QRect(370, 10, 731, 231))
+        self.initiation1.setText("")
+        self.initiation1.setPixmap(QtGui.QPixmap("################image path###############"))
+        self.initiation1.setScaledContents(True)
+        self.initiation1.setObjectName("initiation1")
+        self.eroserofunwanted = QtWidgets.QLabel(background)
+        self.eroserofunwanted.setGeometry(QtCore.QRect(750, 190, 351, 51))
+        self.eroserofunwanted.setStyleSheet("background-color:black;")
+        self.eroserofunwanted.setObjectName("eroserofunwanted")
+        self.textBrowser = QtWidgets.QTextBrowser(background)
+        self.textBrowser.setGeometry(QtCore.QRect(490, 710, 191, 51))
+        self.textBrowser.setStyleSheet("background-color:transparent;\n"
+"border:none;")
+        self.textBrowser.setObjectName("textBrowser")
+        self.startpushButton = QtWidgets.QPushButton(background)
+        self.startpushButton.setGeometry(QtCore.QRect(490, 710, 191, 51))
+        self.startpushButton.setStyleSheet("background-color:transparent;\n"
+"")
+        self.startpushButton.setText("")
+        self.startpushButton.setObjectName("startpushButton")
+
+        self.retranslateUi(background)
+        QtCore.QMetaObject.connectSlotsByName(background)
+
+    def retranslateUi(self, background):
+        _translate = QtCore.QCoreApplication.translate
+        background.setWindowTitle(_translate("background", "Dialog"))
+        self.background_2.setText(_translate("background", "TextLabel"))
+        self.eroserofunwanted.setText(_translate("background", "TextLabel"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    background = QtWidgets.QDialog()
+    ui = Ui_background()
+    ui.setupUi(background)
+    background.show()
+    sys.exit(app.exec_())
